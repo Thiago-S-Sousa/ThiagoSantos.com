@@ -186,13 +186,13 @@ html {
 
         & .box {
           justify-content: center;
-          padding: 2.5rem;
+          padding: 3rem 2.5rem;
         }
       }
 
       & .box {
-        gap: 1.5rem;
-        padding: 2.5rem;
+        gap: 2rem;
+        padding: 3rem 2.5rem;
         border-radius: 1rem;
         background-color: #000000c7;
 
