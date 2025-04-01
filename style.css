@@ -91,7 +91,7 @@ html {
       gap: 1.5rem;
       padding: 5rem;
       border-radius: 2rem;
-      background-color: #000000b0;
+      background-color: #0000007e;
       backdrop-filter: blur(4px);
 
       & i {
@@ -156,10 +156,6 @@ html {
 
 @media only screen and (max-width: 768px) {
   .main {
-    & .mask {
-      background-color: #000000c7;
-    }
-
     & .title {
       gap: 0.5rem;
       padding: 2.5rem 0;
@@ -177,7 +173,7 @@ html {
     & .cards {
       flex-direction: column;
       gap: 1.5rem;
-      padding: 0 0 2rem 0;
+      padding: 0 0 2.5rem 0;
 
       & .contact {
         height: auto;
@@ -194,7 +190,6 @@ html {
         gap: 2rem;
         padding: 3rem 2.5rem;
         border-radius: 1rem;
-        background-color: #000000c7;
 
         & i {
           font-size: 3.5rem;
