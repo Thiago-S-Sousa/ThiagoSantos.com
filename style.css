@@ -145,6 +145,10 @@ html {
 
       & .cdt {
         background: url(./images/foguete.jfif) center / cover no-repeat;
+
+        & br {
+          display: none;
+        }
       }
 
       & .portfolio {
@@ -221,6 +225,12 @@ html {
           height: auto;
           width: 100%;
           border-radius: 1rem;
+        }
+
+        & .cdt {
+          & br {
+            display: block;
+          }
         }
       }
     }
