@@ -222,16 +222,17 @@ html {
         & .btn {
           display: block;
           text-align: center;
-          font-size: 1.4rem;
-          font-weight: 400;
-          padding: 1.5rem 0;
+          font-size: 1.6rem;
+          font-weight: 300;
+          padding: 1.8rem 0;
           width: 100%;
 
           color: #f7f7f7;
-          background-color: #000000d3;
+          background-color: #000;
+          opacity: 0.8;
 
           border: none;
-          border-radius: 0.5rem;
+          border-radius: 1rem;
         }
       }
 
