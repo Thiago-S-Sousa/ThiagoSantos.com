@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/9c7d743b7c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfólio</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" target="_self">Voltar</a>
+    </header>
+    <section class="portfolio">
+      <h1>Portfólio</h1>
+      <aside class="cards">
+        <a
+          href="https://thiago-s-sousa.github.io/AutoFlex/index.html"
+          target="_blank"
+          class="card"
+        >
+          <span class="img" id="autoflex">
+            <span class="mask"> </span>
+          </span>
+          <span class="text-card">
+            <span class="title">AutoFlex</span>
+            <span class="subtitle">Acessar projeto</span>
+          </span>
+        </a>
+        <a
+          href="https://thiago-s-sousa.github.io/Popeye/"
+          target="_blank"
+          class="card"
+        >
+          <span class="img" id="popeye">
+            <span class="mask"> </span>
+          </span>
+          <span class="text-card">
+            <span class="title">Popeye Açai & Vitaminas</span>
+            <span class="subtitle">Acessar projeto</span>
+          </span>
+        </a>
+      </aside>
+    </section>
+    <footer class="footer">
+      <p id="copyright-text"></p>
+      <ul class="list-links">
+        <li>
+          <a href="https://www.instagram.com/bythiagosantos/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://wa.me/message/M7JGSRQMUK2IC1" target="_blank"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a>
+        </li>
+        <li>
+          <a href="mailto:Thiago_S_Sousa@outlook.com" target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      const currentYear = new Date().getFullYear();
+      const owner = "Thiago Santos";
+      const text = `Copyright © ${currentYear}. Todos os direitos reservados a ${owner}.`;
+      document.getElementById("copyright-text").textContent = text;
+    </script>
+  </body>
+</html>

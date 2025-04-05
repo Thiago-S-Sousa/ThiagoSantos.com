@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #121214;
+}
+
+& .header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10dvh;
+  padding: 0 5rem;
+
+  & a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f7f7f7d5;
+    text-decoration: none;
+    text-transform: lowercase;
+    transition: all 0.2s;
+  }
+
+  & a:hover {
+    color: #f7f7f7;
+    transition: all 0.2s;
+  }
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem;
+
+  min-height: calc(100dvh - 10dvh);
+  width: 100%;
+
+  & h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #f7f7f7;
+  }
+
+  & .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+
+    & .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+
+      border-radius: 1rem;
+      border: 0.1rem solid #f7f7f73d;
+
+      & #autoflex {
+        background: url(../images/AutoFlex.jpg) center / cover no-repeat;
+      }
+
+      & #popeye {
+        background: url(../images/PopeyeAcai.png) center / cover no-repeat;
+      }
+
+      & .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 20rem;
+        width: 40rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        & .mask {
+          height: 20rem;
+          width: 40rem;
+          background-color: #0000004d;
+          transition: all 0.2s;
+          border-top-left-radius: 1rem;
+          border-top-right-radius: 1rem;
+        }
+      }
+
+      & .text-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 2rem;
+        width: 40rem;
+
+        background-color: #37373d;
+        color: #f7f7f7;
+        transition: all 0.2s;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        & .title {
+          font-size: 2rem;
+          font-weight: 500;
+        }
+
+        & .subtitle {
+          font-size: 1.6rem;
+          font-weight: 400;
+        }
+      }
+    }
+
+    & .card:hover {
+      & .mask {
+        transition: all 0.2s;
+        background-color: #00000000;
+      }
+
+      & .text-card {
+        transition: all 0.2s;
+        background-color: #52525a;
+      }
+    }
+  }
+}
+
+& .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #19191b;
+
+  padding: 2rem 5rem;
+
+  & p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #f7f7f7;
+  }
+
+  & .list-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    & li,
+    a {
+      list-style-type: none;
+      text-decoration: none;
+    }
+
+    & i {
+      font-size: 3rem;
+      color: #f7f7f7;
+    }
+
+    & i:hover {
+      color: #f7f7f7b0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  & .header {
+    height: 6dvh;
+    padding: 0 2.5rem;
+
+    & a {
+      font-size: 1.2rem;
+    }
+  }
+
+  & .portfolio {
+    gap: 1.5rem;
+    padding: 0;
+
+    min-height: calc(100dvh - 6dvh);
+
+    & h1 {
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+
+    & .cards {
+      flex-direction: column;
+      width: 90%;
+
+      & .card {
+        width: 100%;
+
+        & .img {
+          height: 18rem;
+          width: 100%;
+
+          & .mask {
+            height: 18rem;
+            width: 100%;
+            background-color: transparent;
+          }
+        }
+        & .text-card {
+          align-items: center;
+          width: 100%;
+          padding: 1rem;
+
+          & .title {
+            font-size: 1.8rem;
+          }
+
+          & .subtitle {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  & .footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 2.5rem 5rem;
+    color: #f7f7f7d5;
+
+    & p {
+      font-weight: 300;
+    }
+
+    & .list-links {
+      & i {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
