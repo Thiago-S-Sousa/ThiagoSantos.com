@@ -189,7 +189,9 @@ body {
   }
 
   & .portfolio {
-    gap: 1.5rem;
+    justify-content: space-evenly;
+    gap: 0;
+    /* gap: 1.5rem; */
     padding: 0;
 
     min-height: calc(100dvh - 6dvh);
