@@ -72,9 +72,9 @@ body {
       border-radius: 1rem;
       border: 0.1rem solid #f7f7f73d;
 
-      & #autoflex {
+      /* & #autoflex {
         background: url(../images/AutoFlex.jpg) center / cover no-repeat;
-      }
+      } */
 
       & #popeye {
         background: url(../images/PopeyeAcai.png) center / cover no-repeat;
