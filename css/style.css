@@ -140,14 +140,14 @@ html {
         align-items: flex-start;
       }
 
-      & .cdt,
+      & .enterprise,
       .portfolio {
         height: 29rem;
         width: 100%;
         border-radius: 2rem;
       }
 
-      & .cdt {
+      & .enterprise {
         background: url(../images/foguete.jfif) center / cover no-repeat;
 
         & br {
@@ -240,14 +240,14 @@ html {
         width: 90%;
         gap: 1.5rem;
 
-        & .cdt,
+        & .enterprise,
         .portfolio {
           height: auto;
           width: 100%;
           border-radius: 1rem;
         }
 
-        & .cdt {
+        & .enterprise {
           & br {
             display: block;
           }
